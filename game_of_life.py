@@ -27,13 +27,10 @@ def get_neighbours(grid, rows, columns):
         for column in range(columns - 1, columns + 2):
             if row == rows and column == columns:
                 continue
-            
             if row >= len(grid):
                 row = 0
-
             if column >= len(grid[row]):
                 column = 0
-
             if grid[row][column] == 1:
                 neighbours += 1
     return neighbours
